@@ -4,18 +4,20 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgba(245, 247, 255, 0.85);
-  /* min-height: 100vh; */
+  background-image: url("./../imgs/bg.png");
+  background-repeat: repeat;
+  background-size: cover;
   font-family: "Abdoullah Ashgar EL-kharef", "Times New Roman";
 }
 .container {
   width: 80%;
-  /* margin: 20px auto; */
+  background-color: rgba(245, 247, 255, 0.85);
   padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  margin-bottom: 20px;
 }
 @font-face {
   font-family: "Abdoullah Ashgar EL-kharef";
@@ -34,12 +36,12 @@ img {
 .btn {
   border: none;
   outline: none;
+  font-family: "Mulish", sans-serif;
 }
 .btn.btn-primary {
   background: linear-gradient(113.87deg, #2663df 14.81%, #758ff0 88.76%);
   box-shadow: 0px 6px 18px #9cadf2;
   border-radius: 10px;
-  font-family: "Mulish", sans-serif;
   padding: 19px 0;
 }
 .btn.btn-secondary {
