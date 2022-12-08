@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(245, 247, 255, 0.85);
+  /* min-height: 100vh; */
+  font-family: "Abdoullah Ashgar EL-kharef", "Times New Roman";
+}
+.container {
+  width: 80%;
+  /* margin: 20px auto; */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+@font-face {
+  font-family: "Abdoullah Ashgar EL-kharef";
+  src: url("./../fonts/AbdoullahAshgarEL-kharef.eot"); /* IE9 Compat Modes */
+  src: url("./../fonts/AbdoullahAshgarEL-kharef.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./../fonts/AbdoullahAshgarEL-kharef.woff") format("woff"),
+    /* Modern Browsers */ url("./../fonts/AbdoullahAshgarEL-kharef.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./../fonts/AbdoullahAshgarEL-kharef.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+img {
+  max-height: 315px;
+}
+.btn {
+  border: none;
+  outline: none;
+}
+.btn.btn-primary {
+  background: linear-gradient(113.87deg, #2663df 14.81%, #758ff0 88.76%);
+  box-shadow: 0px 6px 18px #9cadf2;
+  border-radius: 10px;
+  font-family: "Mulish", sans-serif;
+  padding: 19px 0;
+}
+.btn.btn-secondary {
+  background: linear-gradient(
+    113.87deg,
+    rgba(38, 99, 223, 0.1) 14.81%,
+    rgba(117, 143, 240, 0.1) 88.76%
+  );
+  border-radius: 10px;
+  color: rgba(8, 23, 78, 1);
+}
+p {
+  font-family: "Mulish", sans-serif;
+}
