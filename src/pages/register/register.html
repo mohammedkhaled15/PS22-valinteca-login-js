@@ -44,15 +44,22 @@
         </div>
         <div class="inp">
           <i class="bi bi-envelope"></i>
-          <input type="email" placeholder="Email" />
+          <input type="email" placeholder="Email" id="emailInput" />
+          <label id="emailErrorMsg"></label>
         </div>
         <div class="inp">
           <i class="bi bi-lock"></i>
-          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Password" id="passwordInput" />
+          <label id="passwordErrorMsg"></label>
         </div>
         <div class="inp">
           <i class="bi bi-lock"></i>
-          <input type="password" placeholder="Confirm Password" />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            id="confPasswordInput"
+          />
+          <label id="confPasswordErrorMsg"></label>
         </div>
         <button
           id="getStarted"
