@@ -36,10 +36,11 @@
           Go ahead and sign up, let everyone know how awesome you are!
         </p>
       </div>
-      <form class="w-100 d-flex flex-column">
+      <form class="w-100 d-flex flex-column flex-wrap">
         <div class="inp">
           <i class="bi bi-person"></i>
-          <input type="text" placeholder="Username" />
+          <input type="text" placeholder="Username" id="userInput" autofocus />
+          <label id="userErrorMsg"></label>
         </div>
         <div class="inp">
           <i class="bi bi-envelope"></i>

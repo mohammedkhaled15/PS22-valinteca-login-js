@@ -6,6 +6,7 @@
   padding: 8px 12px;
   border-radius: 10px;
   margin-bottom: 20px;
+  position: relative;
 }
 input {
   flex: 1;
@@ -42,4 +43,15 @@ i::after {
   right: -5px;
   bottom: 50%;
   transform: translateY(50%);
+}
+label {
+  position: absolute;
+  top: 100%;
+  font-size: 10px;
+  font-weight: 100;
+  font-family: "AUTO";
+  font-style: italic;
+  width: 100%;
+  text-align: left;
+  left: 2px;
 }
