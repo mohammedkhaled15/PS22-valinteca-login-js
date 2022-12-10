@@ -109,6 +109,7 @@ document
     e.preventDefault();
     const setting = {
       method: "POST",
+      mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
       },
