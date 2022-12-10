@@ -104,20 +104,16 @@ document.addEventListener("keyup", () => {
 document
   .getElementById("registerForm")
   .addEventListener("submit", async (e) => {
-    sessionStorage.setItem("username", email);
     e.preventDefault();
+    sessionStorage.setItem("username", email);
+    const data = { username, email, password, password_confirmation };
     const setting = {
       method: "POST",
       credentials: "same-origin",
       headers: {
         "Content-Type": "application/json",
       },
-      body: {
-        username,
-        email,
-        password,
-        password_confirmation,
-      },
+      body: JSON.stringify(data),
     };
     try {
       const response = await fetch(
