@@ -23,7 +23,7 @@
       id="container"
       class="container d-flex flex-column flex-md-row gap-md-5"
     >
-      <div class="text-center mb-5">
+      <div class="text-center mb-5 w-50">
         <img
           class="rounded-5 img-fluid"
           src="../../imgs/register.png"
@@ -31,68 +31,50 @@
         />
       </div>
       <div class="heading text-center mb-4">
-        <h1 class="display-1 mb-2 fw-bolder text-md-start">Create Account</h1>
+        <h1 class="h1 mb-2 fw-bolder text-md-start">Create Account</h1>
         <p class="fw-normal h6">
           Go ahead and sign up, let everyone know how awesome you are!
         </p>
-      </div>
-      <form class="w-100 d-flex flex-column flex-wrap">
-        <div class="inp">
-          <i class="bi bi-person"></i>
-          <input type="text" placeholder="Username" id="userInput" autofocus />
-          <label id="userErrorMsg"></label>
-        </div>
-        <div class="inp">
-          <i class="bi bi-envelope"></i>
-          <input type="email" placeholder="Email" id="emailInput" />
-          <label id="emailErrorMsg"></label>
-        </div>
-        <div class="inp">
-          <i class="bi bi-lock"></i>
-          <input type="password" placeholder="Password" id="passwordInput" />
-          <label id="passwordErrorMsg"></label>
-        </div>
-        <div class="inp">
-          <i class="bi bi-lock"></i>
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            id="confPasswordInput"
-          />
-          <label id="confPasswordErrorMsg"></label>
-        </div>
-        <button
-          id="getStarted"
-          class="btn btn-primary fw-bold flex-grow-1 mb-3"
-          type="button"
-        >
-          Create Account
-        </button>
-        <button type="button" class="btn btn-secondary flex-grow-1">
-          I already have an account
-        </button>
-      </form>
-      <!-- <form class="row g-3">
-        <label
-          class="visually-hidden fw-bold"
-          for="specificSizeInputGroupUsername"
-          >Username</label
-        >
-        <div class="input-group">
-          <div class="input-group-text"><i class="bi bi-person"></i></div>
-          <input
-            type="text"
-            class="form-control"
-            id="specificSizeInputGroupUsername"
-            placeholder="Username"
-          />
-        </div>
-        <div class="col-12 d-flex">
-          <button type="submit" class="btn btn-primary flex-grow-1">
-            Sign in
+        <h5 id="registerError"></h5>
+        <form class="w-100 d-flex flex-column flex-wrap" id="registerForm">
+          <div class="inp">
+            <i class="bi bi-person"></i>
+            <input
+              type="text"
+              placeholder="Username"
+              id="userInput"
+              autofocus
+            />
+            <label id="userErrorMsg"></label>
+          </div>
+          <div class="inp">
+            <i class="bi bi-envelope"></i>
+            <input type="email" placeholder="Email" id="emailInput" />
+            <label id="emailErrorMsg"></label>
+          </div>
+          <div class="inp">
+            <i class="bi bi-lock"></i>
+            <input type="password" placeholder="Password" id="passwordInput" />
+            <label id="passwordErrorMsg"></label>
+          </div>
+          <div class="inp">
+            <i class="bi bi-lock"></i>
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              id="confPasswordInput"
+            />
+            <label id="confPasswordErrorMsg"></label>
+          </div>
+          <button
+            id="createAccount"
+            class="btn btn-primary fw-bold flex-grow-1 mb-3 disabled"
+            type="submit"
+          >
+            Create Account
           </button>
-        </div>
-      </form> -->
+        </form>
+      </div>
     </div>
     <script type="module" src="../../utilities/bootstrap.min.js"></script>
     <script type="module" src="./register.js"></script>
