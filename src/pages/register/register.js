@@ -112,6 +112,8 @@ document
       mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin":
+          "https://goldblv.com/api/hiring/tasks/register",
       },
       body: {
         username,
