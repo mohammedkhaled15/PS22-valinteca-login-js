@@ -94,7 +94,6 @@ confPasswordInput.addEventListener("input", (e) => {
 document.addEventListener("keyup", () => {
   formValid =
     userValid && confPasswordValid && passwordValid && confPasswordValid;
-  console.log(formValid);
   if (formValid) {
     submitForm.classList.remove("disabled");
   } else {
@@ -109,11 +108,9 @@ document
     e.preventDefault();
     const setting = {
       method: "POST",
-      mode: "no-cors",
+      credentials: "same-origin",
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":
-          "https://goldblv.com/api/hiring/tasks/register",
       },
       body: {
         username,
